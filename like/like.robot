@@ -168,6 +168,7 @@ test1111134
     Comment    Scroll down my item
 
 id role
+    [Tags]    test
     ${options}=    Evaluate    sys.modules['selenium.webdriver.chrome.options'].Options()
     Call Method    ${options}    add_argument    --disable-notifications
     Open Browser    https://vi-vn.facebook.com/    Chrome    options=${options}
